@@ -1,0 +1,8 @@
+prefix=/home/rvl224/brian2lee/gazebo/forklift_test/install
+
+Name: transforms_wiki
+Description: Description of transforms_wiki
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

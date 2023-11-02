@@ -1,0 +1,8 @@
+prefix=/home/rvl224/brian2lee/gazebo/forklift_test/devel
+
+Name: service_pkg
+Description: Description of service_pkg
+Version: 0.0.0
+Cflags: -I/home/rvl224/brian2lee/gazebo/forklift_test/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
