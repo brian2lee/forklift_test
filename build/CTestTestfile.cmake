@@ -5,10 +5,9 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("realsense2_description")
 subdirs("ros1_wiki/forklift")
 subdirs("ros1_wiki/learning_pkg")
-subdirs("ros1_wiki/mobile_robot")
 subdirs("ros1_wiki/pallet")
 subdirs("ros1_wiki/service_pkg")
-subdirs("ros1_wiki/transforms_wiki")
-subdirs("ros1_wiki/turtlebot3_description")
+subdirs("realsense_gazebo_plugin")

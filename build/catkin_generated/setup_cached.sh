@@ -7,11 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/rvl224/brian2lee/gazebo/forklift_test/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH='/home/rvl224/brian2lee/gazebo/forklift_test/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu:/usr/local/cuda/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:=='
-export PATH='/opt/ros/noetic/bin:/home/rvl224/anaconda3/condabin:/usr/local/cuda/bin:/home/rvl224/.local/bin:/home/rvl224/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
-export PKG_CONFIG_PATH="/home/rvl224/brian2lee/gazebo/forklift_test/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/rvl224/brian2lee/gazebo/forklift_test/build'
-export PYTHONPATH="/home/rvl224/brian2lee/gazebo/forklift_test/devel/lib/python3/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES='/home/rvl224/brian2lee/gazebo/forklift_test/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/rvl224/brian2lee/gazebo/forklift_test/src:$ROS_PACKAGE_PATH"
