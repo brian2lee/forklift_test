@@ -131,12 +131,12 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/rvl224/brian2lee/gazebo/forklift_test/build/gtest/cmake_install.cmake")
-  include("/home/rvl224/brian2lee/gazebo/forklift_test/build/realsense2_description/cmake_install.cmake")
+  include("/home/rvl224/brian2lee/gazebo/forklift_test/build/ros1_wiki/realsense2_description/cmake_install.cmake")
   include("/home/rvl224/brian2lee/gazebo/forklift_test/build/ros1_wiki/forklift/cmake_install.cmake")
   include("/home/rvl224/brian2lee/gazebo/forklift_test/build/ros1_wiki/learning_pkg/cmake_install.cmake")
   include("/home/rvl224/brian2lee/gazebo/forklift_test/build/ros1_wiki/pallet/cmake_install.cmake")
   include("/home/rvl224/brian2lee/gazebo/forklift_test/build/ros1_wiki/service_pkg/cmake_install.cmake")
-  include("/home/rvl224/brian2lee/gazebo/forklift_test/build/realsense_gazebo_plugin/cmake_install.cmake")
+  include("/home/rvl224/brian2lee/gazebo/forklift_test/build/ros1_wiki/realsense_gazebo_plugin/cmake_install.cmake")
 
 endif()
 

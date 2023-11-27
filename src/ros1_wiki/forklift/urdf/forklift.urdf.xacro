@@ -201,6 +201,9 @@
     </xacro:macro>
 
     <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" />
+    <xacro:sensor_d435 name="camera" topics_ns="camera" parent="base_link" publish_pointcloud="true">
+        <origin xyz="0.2625 0 -0.10775" rpy="0 0 0" />
+    </xacro:sensor_d435>  
 
 <!--   ***   combine component   ***   -->
 <!--
