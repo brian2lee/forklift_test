@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="pallet">
+
+    <link name="base_footprint"/>
+
+<!--   ***   plank   ***   -->
+    <xacro:macro name="base" params="name1 name2 z">
+        <link name="base_${name1}">
+            <inertial>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <mass value="0.1"/>
+                <inertia ixx="0.0005209083333333333"  
+                    iyy="0.0007752833333333334"  
+                    izz="0.0012960416666666667"
+                    ixy="0.0"
+                    ixz="0.0"
+                    iyz="0.0"/>
+            </inertial>
+            <visual name="">
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <box size="0.305 0.25 0.003"/>
+                </geometry>
+                <material name="red">
+                    <color rgba="1.0 0.0 0.0 1.0"/>
+                    <texture filename=""/>
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <box size="0.305 0.25 0.003"/>
+                </geometry>
+            </collision>
+        </link>
+        <gazebo reference="base_${name1}">
+            <material>Gazebo/Red</material>
+        </gazebo>
+        
+        <joint name="base_joint_${name1}" type="fixed">
+            <origin xyz="0.0 0.0 ${z}" rpy="0.0 0.0 0.0"/>
+            <parent link="${name2}"/>
+            <child link="base_${name1}"/>
+        </joint>
+    </xacro:macro>
+
+<!--   ***   beam   ***   -->
+    <xacro:macro name="beam" params="name x y">
+        <link name="beam_${name}">
+            <inertial>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <mass value="0.01"/>
+                <inertia ixx="0.00000194"  
+                    iyy="0.00000404"  
+                    izz="0.00000331"
+                    ixy="0.0"
+                    ixz="0.0"
+                    iyz="0.0"/>
+            </inertial>
+            <visual name="">
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <box size="0.057 0.027 0.04"/>
+                </geometry>
+                <material name="red">
+                    <color rgba="1.0 0.0 0.0 1.0"/>
+                    <texture filename=""/>
+                </material>
+            </visual>
+            <collision>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+                <geometry>
+                    <box size="0.057 0.027 0.04"/>
+                </geometry>
+            </collision>
+        </link>
+        <gazebo reference="beam_${name}">
+            <material>Gazebo/Red</material>
+        </gazebo>
+        
+        <joint name="beamjoint_${name}" type="fixed">
+            <origin xyz="${x} ${y} 0.0215" rpy="0.0 0.0 0.0"/>
+            <parent link="base_bottom"/>
+            <child link="beam_${name}"/>
+        </joint>
+    </xacro:macro>
+
+<!--   ***   combine component   ***   -->
+    <xacro:base name1="bottom" name2="base_footprint" z="0"/>
+    <xacro:base name1="top" name2="beam_2_2" z="0.0215"/>
+
+    <xacro:beam name="1_1" x="-0.124 " y="-0.1115"/>
+    <xacro:beam name="1_2" x="-0.124 " y="0"/>
+    <xacro:beam name="1_3" x="-0.124 " y="0.1115"/>
+    <xacro:beam name="2_1" x="0" y="-0.1115"/>
+    <xacro:beam name="2_2" x="0" y="0"/>
+    <xacro:beam name="2_3" x="0" y="0.1115"/>
+    <xacro:beam name="3_1" x="0.124 " y="-0.1115"/>
+    <xacro:beam name="3_2" x="0.124 " y="0"/>
+    <xacro:beam name="3_3" x="0.124 " y="0.1115"/>
+
+</robot>

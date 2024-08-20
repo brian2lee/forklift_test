@@ -1,0 +1,15 @@
+rvl224@eervl224:~/brian2lee/gazebo/forklift_test$ 
+. devel/setup.bash
+roslaunch forklift gazebo.launch
+
+===
+workpace create pkg
+catkin_create_pkg <package_name> std_msgs rospy roscpp
+
+===
+launch file
+<arg>有兩種寫法，一個是使用default，default是給一個預設值，可以在執行 roslaunch 時修改，另一個是 value，value是吃指定值，無法修改，兩者不能寫在同一行。
+
+===
+ROS Topic 常用指令 & ROS Graph
+https://ithelp.ithome.com.tw/m/articles/10206391

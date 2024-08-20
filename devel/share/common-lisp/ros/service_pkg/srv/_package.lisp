@@ -1,0 +1,15 @@
+(cl:defpackage service_pkg-srv
+  (:use )
+  (:export
+   "ADDITION"
+   "<ADDITION-REQUEST>"
+   "ADDITION-REQUEST"
+   "<ADDITION-RESPONSE>"
+   "ADDITION-RESPONSE"
+   "VELOCITY"
+   "<VELOCITY-REQUEST>"
+   "VELOCITY-REQUEST"
+   "<VELOCITY-RESPONSE>"
+   "VELOCITY-RESPONSE"
+  ))
+

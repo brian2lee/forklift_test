@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="robot_description" command="xacro '$(find forklift)/urdf/forklift.urdf.xacro'"/>
+    <param name="pallet_obj" command="xacro '$(find pallet)/urdf/pallet.urdf.xacro'"/>
+    
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"/>
+
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find env_world)/world/test.world"/>
+
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+        
+    </include>
+
+    <node name="spawning_forklift" pkg="gazebo_ros" type="spawn_model" args="-urdf -model forklift -param robot_description -z 0.160253"/> 
+    <node name="spawning_pallet" pkg="gazebo_ros" type="spawn_model" args="-urdf -model pallet -param pallet_obj -x 5 -z 0.001500  "/> 
+    
+    
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find forklift)/rviz/cam.rviz" required="true" />
+    <!--
+    <?  default rviz   ?>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find realsense2_description)/rviz/urdf.rviz" required="true" />
+-->
+
+    <node name="img" pkg="img" type="img_show.py" output="screen" args="$(find img)/src/img_show.py"/>
+    <node name="img_depth" pkg="img" type="img_show_depth.py" output="screen" args="$(find img)/src/img_show_depth.py"/>
+    <!--
+    <node name="img_both" pkg="img" type="img_show_both.py" output="screen" args="$(find img)/src/img_show_both.py"/>
+-->
+</launch>

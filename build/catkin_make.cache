@@ -1,0 +1,2 @@
+ros1_wiki/env_world:ros1_wiki/forklift:ros1_wiki/pallet:ros1_wiki/realsense2_description:ros1_wiki/realsense_gazebo_plugin
+-DCATKIN_DEVEL_PREFIX=/home/brian/forklift_test/devel -DCMAKE_INSTALL_PREFIX=/home/brian/forklift_test/install -G Unix Makefiles
