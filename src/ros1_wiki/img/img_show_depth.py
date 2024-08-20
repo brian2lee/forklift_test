@@ -21,13 +21,10 @@ class DepthImageConverter:
 
         # Normalize the depth image to fall within 0-255 and convert it to uint8
         cv_image_norm = cv2.normalize(cv_image, None, 0, 255, cv2.NORM_MINMAX)
-        cv_image_8u = cv_image_norm.astype(np.uint8)
-
-        # Apply a color map to the normalized depth image for better visualization
-        depth_colormap = cv2.applyColorMap(cv_image_8u, cv2.COLORMAP_JET)
+        depth_map = cv_image_norm.astype(np.uint8)
 
         # Display the depth image in an OpenCV window
-        cv2.imshow("Depth Image", depth_colormap)
+        cv2.imshow("Depth Image", depth_map)
         cv2.waitKey(3)
 
 def main():
