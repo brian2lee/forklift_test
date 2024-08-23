@@ -1,0 +1,8 @@
+prefix=/home/brianlee/forklift_test/install
+
+Name: forklift
+Description: Description of forklift
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
