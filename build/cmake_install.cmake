@@ -136,6 +136,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/brianlee/forklift_test/build/ros1_wiki/forklift/cmake_install.cmake")
   include("/home/brianlee/forklift_test/build/ros1_wiki/img/cmake_install.cmake")
   include("/home/brianlee/forklift_test/build/ros1_wiki/pallet/cmake_install.cmake")
+  include("/home/brianlee/forklift_test/build/ros-gazebo-gym/cmake_install.cmake")
   include("/home/brianlee/forklift_test/build/ros1_wiki/realsense_gazebo_plugin/cmake_install.cmake")
 
 endif()

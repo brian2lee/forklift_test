@@ -7,7 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/brianlee/forklift_test/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/brianlee/forklift_test/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/brianlee/forklift_test/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/brianlee/forklift_test/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH="/home/brianlee/forklift_test/devel/lib/python3/dist-packages:$PYTHONPATH"
