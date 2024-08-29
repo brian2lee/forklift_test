@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="robot_description" command="xacro '$(find pallet)/urdf/pallet.urdf.xacro'"/>
+    <arg name="rviz_config_file" default="$(find pallet)/config/pallet.rviz"/>
+    
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_config_file)"/>
+        
+</launch>

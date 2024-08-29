@@ -1,0 +1,2 @@
+env_world:forklift:img:pallet:realsense2_description:realsense_gazebo_plugin:train
+-DCATKIN_DEVEL_PREFIX=/home/brianlee/forklift_test/devel -DCMAKE_INSTALL_PREFIX=/home/brianlee/forklift_test/install -G Unix Makefiles

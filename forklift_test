@@ -1,0 +1,37 @@
+sudo chmod -R 755 /home/brianlee/forklift_test
+rvl224@eervl224:~/brian2lee/gazebo/forklift_test$ 
+. devel/setup.bash
+roslaunch forklift gazebo.launch
+
+===
+workpace create pkg
+catkin_create_pkg <package_name> std_msgs rospy roscpp
+
+===
+show images
+rosrun image_view image_view image:=/camera/color/image_raw __name:=image_view_color
+rosrun image_view image_view image:=/camera/depth/image_raw __name:=image_view_depth
+
+=== 
+control bot 
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=forklift/cmd_vel
+
+===
+launch file
+<arg>有兩種寫法，一個是使用default，default是給一個預設值，可以在執行 roslaunch 時修改，另一個是 value，value是吃指定值，無法修改，兩者不能寫在同一行。
+
+===
+ROS Topic 常用指令 & ROS Graph
+https://ithelp.ithome.com.tw/m/articles/10206391
+rosrun rqt_graph rqt_graph
+
+===
+git 
+https://ithelp.ithome.com.tw/articles/10271811
+git add .
+git commit -m "message"
+git push -u forklift_test master
+===
+source /opt/ros/noetic/setup.bash 
+
+echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
