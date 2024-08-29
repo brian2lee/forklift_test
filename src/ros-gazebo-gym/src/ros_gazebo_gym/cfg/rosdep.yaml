@@ -1,0 +1,17 @@
+# Archive with download information about the ROS dependencies used in the 'ros_gazebo_gym' environments.
+# NOTE: Here you should add information about ROS dependencies for new 'ros_gazebo_gym' environments.
+# NOTE: Used in the ROSLauncher class.
+
+# == Panda env ==
+panda_gazebo:                                             # Main environment package dependency.
+  binary: False                                           # If also available as system binary.
+  git_url: https://github.com/rickstaa/panda_gazebo.git   # Git repository URL.
+  git_branch: noetic                                      # Git repository branch.    
+
+  # Additional dependencies.
+  # NOTE: If possible specify in main environment package 'package.xml' file.                       
+  deps:
+    # franka_ros:  # NOTE: Included as an example, redundant with 'panda_gazebo' submodule.
+    #   binary: True
+    #   git_url: https://github.com/frankaemika/franka_ros
+    #   git_branch: develop
