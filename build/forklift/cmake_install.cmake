@@ -1,8 +1,8 @@
-# Install script for directory: /home/brianlee/forklift_test/src/forklift
+# Install script for directory: /home/brian/forklift_test/src/forklift
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/brianlee/forklift_test/install")
+  set(CMAKE_INSTALL_PREFIX "/home/brian/forklift_test/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brianlee/forklift_test/build/forklift/catkin_generated/installspace/forklift.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brian/forklift_test/build/forklift/catkin_generated/installspace/forklift.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forklift/cmake" TYPE FILE FILES
-    "/home/brianlee/forklift_test/build/forklift/catkin_generated/installspace/forkliftConfig.cmake"
-    "/home/brianlee/forklift_test/build/forklift/catkin_generated/installspace/forkliftConfig-version.cmake"
+    "/home/brian/forklift_test/build/forklift/catkin_generated/installspace/forkliftConfig.cmake"
+    "/home/brian/forklift_test/build/forklift/catkin_generated/installspace/forkliftConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forklift" TYPE FILE FILES "/home/brianlee/forklift_test/src/forklift/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/forklift" TYPE FILE FILES "/home/brian/forklift_test/src/forklift/package.xml")
 endif()
 

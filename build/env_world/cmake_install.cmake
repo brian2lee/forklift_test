@@ -1,8 +1,8 @@
-# Install script for directory: /home/brianlee/forklift_test/src/env_world
+# Install script for directory: /home/brian/forklift_test/src/env_world
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/brianlee/forklift_test/install")
+  set(CMAKE_INSTALL_PREFIX "/home/brian/forklift_test/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brianlee/forklift_test/build/env_world/catkin_generated/installspace/env_world.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brian/forklift_test/build/env_world/catkin_generated/installspace/env_world.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/env_world/cmake" TYPE FILE FILES
-    "/home/brianlee/forklift_test/build/env_world/catkin_generated/installspace/env_worldConfig.cmake"
-    "/home/brianlee/forklift_test/build/env_world/catkin_generated/installspace/env_worldConfig-version.cmake"
+    "/home/brian/forklift_test/build/env_world/catkin_generated/installspace/env_worldConfig.cmake"
+    "/home/brian/forklift_test/build/env_world/catkin_generated/installspace/env_worldConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/env_world" TYPE FILE FILES "/home/brianlee/forklift_test/src/env_world/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/env_world" TYPE FILE FILES "/home/brian/forklift_test/src/env_world/package.xml")
 endif()
 

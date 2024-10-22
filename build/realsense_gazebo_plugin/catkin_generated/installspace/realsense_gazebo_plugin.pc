@@ -1,4 +1,4 @@
-prefix=/home/brianlee/forklift_test/install
+prefix=/home/brian/forklift_test/install
 
 Name: realsense_gazebo_plugin
 Description: Description of realsense_gazebo_plugin

@@ -1,5 +1,6 @@
 sudo chmod -R 755 /home/brianlee/forklift_test
-rvl224@eervl224:~/brian2lee/gazebo/forklift_test$ 
+--- delete build and devel ---
+catkin_make
 . devel/setup.bash
 roslaunch forklift gazebo.launch
 

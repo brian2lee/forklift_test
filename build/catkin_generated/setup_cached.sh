@@ -7,4 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/brianlee/forklift_test/build'
+export PWD='/home/brian/forklift_test/build'
+export PYTHONPATH="/home/brian/forklift_test/devel/lib/python3/dist-packages:$PYTHONPATH"
+export ROS_PACKAGE_PATH='/home/brian/forklift_test/src:/opt/ros/noetic/share'

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/brianlee/forklift_test/src
+CMAKE_SOURCE_DIR = /home/brian/forklift_test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/brianlee/forklift_test/build
+CMAKE_BINARY_DIR = /home/brian/forklift_test/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/build: _catk
 .PHONY : realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/brianlee/forklift_test/build/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/brian/forklift_test/build/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/brianlee/forklift_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brianlee/forklift_test/src /home/brianlee/forklift_test/src/realsense2_description /home/brianlee/forklift_test/build /home/brianlee/forklift_test/build/realsense2_description /home/brianlee/forklift_test/build/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/brian/forklift_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brian/forklift_test/src /home/brian/forklift_test/src/realsense2_description /home/brian/forklift_test/build /home/brian/forklift_test/build/realsense2_description /home/brian/forklift_test/build/realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense2_description/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

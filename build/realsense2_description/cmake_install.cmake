@@ -1,8 +1,8 @@
-# Install script for directory: /home/brianlee/forklift_test/src/realsense2_description
+# Install script for directory: /home/brian/forklift_test/src/realsense2_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/brianlee/forklift_test/install")
+  set(CMAKE_INSTALL_PREFIX "/home/brian/forklift_test/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,26 +38,26 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brianlee/forklift_test/build/realsense2_description/catkin_generated/installspace/realsense2_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/brian/forklift_test/build/realsense2_description/catkin_generated/installspace/realsense2_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description/cmake" TYPE FILE FILES
-    "/home/brianlee/forklift_test/build/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig.cmake"
-    "/home/brianlee/forklift_test/build/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig-version.cmake"
+    "/home/brian/forklift_test/build/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig.cmake"
+    "/home/brian/forklift_test/build/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/brianlee/forklift_test/src/realsense2_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/brian/forklift_test/src/realsense2_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE DIRECTORY FILES
-    "/home/brianlee/forklift_test/src/realsense2_description/launch"
-    "/home/brianlee/forklift_test/src/realsense2_description/meshes"
-    "/home/brianlee/forklift_test/src/realsense2_description/rviz"
-    "/home/brianlee/forklift_test/src/realsense2_description/urdf"
+    "/home/brian/forklift_test/src/realsense2_description/launch"
+    "/home/brian/forklift_test/src/realsense2_description/meshes"
+    "/home/brian/forklift_test/src/realsense2_description/rviz"
+    "/home/brian/forklift_test/src/realsense2_description/urdf"
     )
 endif()
 

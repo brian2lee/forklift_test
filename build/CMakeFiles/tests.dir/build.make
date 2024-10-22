@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/brianlee/forklift_test/src
+CMAKE_SOURCE_DIR = /home/brian/forklift_test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/brianlee/forklift_test/build
+CMAKE_BINARY_DIR = /home/brian/forklift_test/build
 
 # Utility rule file for tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/brianlee/forklift_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brianlee/forklift_test/src /home/brianlee/forklift_test/src /home/brianlee/forklift_test/build /home/brianlee/forklift_test/build /home/brianlee/forklift_test/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/brian/forklift_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/brian/forklift_test/src /home/brian/forklift_test/src /home/brian/forklift_test/build /home/brian/forklift_test/build /home/brian/forklift_test/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

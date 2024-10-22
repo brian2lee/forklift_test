@@ -1,4 +1,4 @@
-prefix=/home/brianlee/forklift_test/devel
+prefix=/home/brian/forklift_test/devel
 
 Name: img
 Description: Description of img
