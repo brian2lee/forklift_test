@@ -33,6 +33,12 @@ rosrun rqt_graph rqt_graph
 ===
 git 
 https://ithelp.ithome.com.tw/articles/10271811
+-first
+git remote add forklift_test https://github.com/brian2lee/forklift_test.git
+git branch -M master
+git push -u forklift_test master
+-
+-
 git add .
 git commit -m "message"
 git push -u forklift_test master
