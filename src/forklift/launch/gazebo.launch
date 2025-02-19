@@ -19,13 +19,11 @@
     </include>
 
     <node name="spawning_forklift" pkg="gazebo_ros" type="spawn_model" args="-urdf -model forklift -param robot_description -z 0.160253"/> 
-    <node name="spawning_pallet" pkg="gazebo_ros" type="spawn_model" args="-urdf -model pallet -param pallet_obj -x 1 -z 0.001500  "/> 
-    
-    
+    <node name="spawning_pallet" pkg="gazebo_ros" type="spawn_model" args="-urdf -model pallet -param pallet_obj -x 1 -z 0.001500  "/>
+     
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find forklift)/rviz/cam.rviz" required="true" />
- 
-    <node name="img_seg" pkg="img" type="img_seg.py" output="screen" />
-
-    <node name="img_both" pkg="img" type="img_show_both.py" output="screen" />
+    
+    <!-- depth and color visualize -->
+    <include file="$(find img)/launch/image.launch"/>  
 
 </launch>

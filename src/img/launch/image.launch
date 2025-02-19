@@ -1,12 +1,10 @@
+<?xml version="1.0"?>
 <launch>
-  <!-- Node for visualizing the color image -->
-  <node name="image_view_color" pkg="image_view" type="image_view" output="screen">
-    <param name="image" value="/camera/color/image_raw" />
-  </node>
+    <!-- Launch image_view for RGB image (realsense d435 rgb resolution 1920*1080)-->
+    <node name="image_view_color" pkg="image_view" type="image_view" args="image:=/camera/color/image_raw" />
 
-  <!-- Node for visualizing the depth image -->
-  <node name="image_view_depth" pkg="image_view" type="image_view" output="screen">
-    <param name="image" value="/camera/depth/image_raw" />
-  </node>
+    <!-- Launch image_view for Depth image (realsense d435 depth resolution 1280*720)-->
+    <node name="image_view_depth" pkg="image_view" type="image_view" args="image:=/camera/depth/image_raw" />
+
+    <!-- realsense resolution https://www.intelrealsense.com/compare-depth-cameras/ -->
 </launch>
-

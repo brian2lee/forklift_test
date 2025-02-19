@@ -1,4 +1,4 @@
-sudo chmod -R 755 /home/brianlee/forklift_test
+sudo chmod -R 755 /home/brian/forklift_test
 --- delete build and devel ---
 catkin_make
 . devel/setup.bash
